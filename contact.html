@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact – Bim</title>
+    <meta name="description" content="Neem contact op met Bim voor een nieuw webdesign of een dashboard op maat.">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="Webdesign">
+            </a>
+
+            <nav class="main-nav" aria-label="Hoofdmenu">
+                <a href="index.html">Home</a>
+                <a href="contact.html" class="active" aria-current="page">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <p class="eyebrow">Een nieuwe website of dashboard?</p>
+        <h1>Contact</h1>
+
+        <div class="contact-wrap">
+            <div class="contact-grid">
+                <section class="glass">
+                    <h2>Neem contact op</h2>
+                    <p>Heeft u een vraag of een idee voor een nieuw ontwerp? Stuur ons een bericht, we reageren zo snel mogelijk.</p>
+                    <!-- <ul class="contact-list">
+                        <li><span>E-mail</span><a href="mailto:info@voorbeeld.nl">info@voorbeeld.nl</a></li>
+                        <li><span>Telefoon</span><a href="tel:+31600000000">06 00 00 00 00</a></li>
+                        <li><span>Plaats</span><span>Apeldoorn</span></li>
+                    </ul> -->
+                </section>
+
+                <section class="glass">
+                    <h2>Bereikbaarheid</h2>
+                    <ul class="contact-list">
+                        <li><span>Maandag t/m zaterdag</span><span>op afspraak</span></li>
+                        <!-- <li><span>Zaterdag</span><span>Op afspraak</span></li>
+                        <li><span>Zondag</span><span>Gesloten</span></li> -->
+                    </ul>
+                </section>
+            </div>
+
+            <section class="glass">
+                <h2>Stuur ons een bericht</h2>
+                <!-- Vervang de actie door je eigen formsubmit-adres -->
+                <form class="contact-form" action="https://formsubmit.co/JOUW-EMAILADRES" method="POST">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="Nieuw bericht via Bim">
+                    <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <div class="form-row">
+                        <div>
+                            <label for="name">Naam</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <label for="subject">Onderwerp</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Bericht</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button class="send-btn" type="submit">Verstuur</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 Bim</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Webdesign</title>
+    <meta name="description" content="Tijdloos design en autogalerij.">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="Webdesign">
+            </a>
+
+            <nav class="main-nav" aria-label="Hoofdmenu">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <p class="eyebrow">Website of dashboard? wij maken het.</p>
+        <h1>Bim<br></h1>
+
+        <!-- AUTO GALERIJ -->
+        <section class="gallery" aria-label="Autogalerij">
+            <article class="card">
+                <img src="images/auto1.avif" alt="Sportieve Porsche">
+                <span>01 / Websites</span>
+            </article>
+
+            <article class="card">
+                <img src="images/auto2.avif" alt="Witte sportauto">
+                <span>02 / Dashboards</span>
+            </article>
+
+            <article class="card">
+                <img src="images/auto4.avif" alt="Auto design">
+                <span>03 / Ontwerpen</span>
+            </article>
+
+            <article class="card">
+                <img src="images/auto5.avif" alt="Moderne auto">
+                <span>04 / Techniek</span>
+            </article>
+
+            <article class="card">
+                <img src="images/auto1.avif" alt="Sportauto in landschap">
+                <span>05 / Branding</span>
+            </article>
+        </section>
+
+        <p class="hint">
+            Een nieuw ontwerp voor uw bedrijf of een dashboard om data inzichtelijk te maken
+        </p>
+
+        <!-- STRANDFOTO ALS ACHTERGROND + TEKST -->
+        <div class="banner-break">
+            <img src="images/beach.jpg" alt="Foto van het strand" class="banner-bg">
+
+            <section class="intro-text">
+                <p class="eyebrow">Een nieuwe look</p>
+                <h2>Vertrouwd gevoel</h2>
+                <p>
+                    Sommige ontwerpen blijven je altijd bij.
+                    Ze vertellen een verhaal en kenmerken uw bedrijf.
+                </p>
+            </section>
+        </div>
+
+        <!-- FOTOBOEK -->
+        <div class="lower-section">
+            <section class="book-section">
+                <h2>KLIK OP EEN PAGINA OM TE BLADEREN</h2>
+
+                <div class="flipbook" id="flipbook">
+                    <div class="leaf" style="--i: 0;">
+                        <div class="front photo-leaf">
+                            <img src="images/laptop.jpg" alt="Foto 1">
+                            <div class="page-text">
+                                <span class="page-tag">Editie 2026</span>
+                                <h3>Magazine</h3>
+                                <p>Tijdloos webdesign &amp; maatwerk dashboards.</p>
+                            </div>
+                        </div>
+                        <div class="back photo-leaf">
+                            <img src="images/lagen2.png" alt="Foto 2">
+                            <div class="page-text">
+                                <span class="page-tag">01 / Webdesign</span>
+                                <h3>Ontwerpen</h3>
+                                <p>Een moderne eerste indruk die direct blijft hangen.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leaf" style="--i: 1;">
+                        <div class="front photo-leaf">
+                            <img src="images/auto1.jpg" alt="Foto 3">
+                            <div class="page-text">
+                                <span class="page-tag">02 / Dashboards</span>
+                                <h3>Data</h3>
+                                <p>Overzichtelijke statistieken waarmee u sneller stuurt.</p>
+                            </div>
+                        </div>
+                        <div class="back photo-leaf">
+                            <img src="images/caching.png" alt="Foto 4">
+                            <div class="page-text">
+                                <span class="page-tag">03 / Ontwerpen</span>
+                                <h3>Less is more</h3>
+                                <p>Responsive designs voor op mobiel als desktop.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leaf" style="--i: 2;">
+                        <div class="front photo-leaf">
+                            <img src="images/auto5.avif" alt="Foto 5">
+                            <div class="page-text">
+                                <span class="page-tag">04 / Maatwerk</span>
+                                <h3>Uw eigen verhaal</h3>
+                                <p>Met een uniek ontwerp.</p>
+                            </div>
+                        </div>
+                        <div class="back photo-leaf">
+                            <img src="images/auto5.avif" alt="Foto 6">
+                            <div class="page-text">
+                                <span class="page-tag">Contact</span>
+                                <h3>Samenwerken?</h3>
+                                <p>Neem contact op en ontdek wat wij met u kunnen maken.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-controls">
+                    <button type="button" id="prev-btn">&larr; Vorige</button>
+                    <button type="button" id="next-btn">Volgende &rarr;</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- TELEFOON MOCKUP -->
+        <section class="phone-showcase" aria-label="Mobiele weergave">
+            <div class="showcase-header">
+                <p class="eyebrow">Altijd en overal zichtbaar</p>
+                <h2>Tijdloos ontwerp</h2>
+            </div>
+
+            <div class="stage">
+                <!-- Grote tekst half achter de telefoon -->
+                <div class="word" aria-hidden="true">Bim</div>
+
+                <div class="phone">
+                    <div class="screen">
+                        <div class="notch"></div>
+                        <div class="status-time">9:41</div>
+                        <div class="home-bar"></div>
+
+                        <div class="phone-scroll">
+                            <div class="p-header">
+                                <img src="images/logo.png" alt="Webdesign">
+                                <div class="p-nav">
+                                    <span class="active">Home</span>
+                                    <span>Contact</span>
+                                </div>
+                            </div>
+
+                            <div class="p-hero"> 
+                                <p class="p-eyebrow">Website of dashboard? wij maken het.</p>
+                                <h3>Bim</h3>
+
+                                <div class="p-gallery">
+                                    <div class="p-card">
+                                        <img src="images/auto1.avif" alt="Sportieve Porsche">
+                                        <span>01 / Websites</span>
+                                    </div>
+                                    <div class="p-card">
+                                        <img src="images/auto2.avif" alt="Witte sportauto">
+                                        <span>02 / Dashboards</span>
+                                    </div>
+                                    <div class="p-card">
+                                        <img src="images/auto4.avif" alt="Auto design">
+                                        <span>03 / Ontwerpen</span>
+                                    </div>
+                                    <div class="p-card">
+                                        <img src="images/auto5.avif" alt="Moderne auto">
+                                        <span>04 / Techniek</span>
+                                    </div>
+                                    <div class="p-card">
+                                        <img src="images/auto1.avif" alt="Sportauto in landschap">
+                                        <span>05 / Branding</span>
+                                    </div>
+                                </div>
+
+                                <p class="p-hint">
+                                    Een nieuw ontwerp voor uw bedrijf of een dashboard om data inzichtelijk te maken.
+                                </p>
+                            </div>
+
+                            <div class="p-banner">
+                                <img src="images/beach.jpg" alt="Foto van het strand">
+                                <div class="p-banner-text">
+                                    <p class="p-eyebrow">Een nieuwe look</p>
+                                    <h4>Voor u gebruikers</h4>
+                                    <p>
+                                        Sommige ontwerpen blijven altijd je bij.
+                                        Ze vertellen een verhaal en kenmerken uw bedrijf.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 Bim</p>
+        </div>
+    </footer>
+
+    <script src="js/boek.js"></script>
+</body>
+
+</html>

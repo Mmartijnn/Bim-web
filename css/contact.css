@@ -1,0 +1,151 @@
+/* Contactpagina – bouwt voort op style2.css */
+.contact-wrap {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  padding: 28px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.glass h2 {
+  margin: 0 0 14px;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.glass p {
+  margin: 0 0 14px;
+  color: #cfd2d6;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f0f2f5;
+  font-size: 15px;
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-list li span:first-child {
+  color: #cfd2d6;
+}
+
+.contact-list a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Formulier */
+.contact-form label {
+  display: block;
+  margin: 16px 0 6px;
+  color: #d4d7da;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  font: inherit;
+  font-size: 15px;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ffffff;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.send-btn {
+  margin-top: 24px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #232527;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #e4e6e8;
+  transform: translateY(-2px);
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+@media (max-width: 750px) {
+  .contact-grid,
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-grid {
+    gap: 16px;
+  }
+
+  .glass {
+    padding: 22px;
+  }
+}
