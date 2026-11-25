@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact – Bim</title>
-    <meta name="description" content="Neem contact op met Bim voor een nieuw webdesign of een dashboard op maat.">
+    <meta name="description"
+        content="Samenwerken? Stuur ons een bericht voor een nieuw webdesign of een dashboard op maat.">
 
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
@@ -29,39 +30,34 @@
     </header>
 
     <main class="page">
-        <p class="eyebrow">Een nieuwe website of dashboard?</p>
-        <h1>Contact</h1>
+        <div class="contact-hero">
+            <p class="eyebrow">Contact</p>
+            <h1>Samenwerken?</h1>
+            <p class="sub">Stuur ons een bericht</p>
+        </div>
 
-        <div class="contact-wrap">
-            <div class="contact-grid">
-                <section class="glass">
-                    <h2>Neem contact op</h2>
-                    <p>Heeft u een vraag of een idee voor een nieuw ontwerp? Stuur ons een bericht, we reageren zo snel mogelijk.</p>
-                    <!-- <ul class="contact-list">
-                        <li><span>E-mail</span><a href="mailto:info@voorbeeld.nl">info@voorbeeld.nl</a></li>
-                        <li><span>Telefoon</span><a href="tel:+31600000000">06 00 00 00 00</a></li>
-                        <li><span>Plaats</span><span>Apeldoorn</span></li>
-                    </ul> -->
-                </section>
+        <!-- ENVELOP MET BRIEF (HET FORMULIER) -->
+        <div class="envelope">
+            <svg class="envelope-art" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <rect width="100" height="100" fill="#d6dade" />
+                <polygon points="0,0 100,0 50,48" fill="#c4c9ce" />
+                <polygon points="0,0 50,58 0,100" fill="#e3e6e9" />
+                <polygon points="100,0 50,58 100,100" fill="#e3e6e9" />
+                <polygon points="0,100 50,58 100,100" fill="#eceef0" />
+            </svg>
 
-                <section class="glass">
-                    <h2>Bereikbaarheid</h2>
-                    <ul class="contact-list">
-                        <li><span>Maandag t/m zaterdag</span><span>op afspraak</span></li>
-                        <!-- <li><span>Zaterdag</span><span>Op afspraak</span></li>
-                        <li><span>Zondag</span><span>Gesloten</span></li> -->
-                    </ul>
-                </section>
-            </div>
+            <section class="letter">
+                <!-- <h2>Gesprek?</h2> -->
+                <p class="letter-intro">Heeft u een vraag of een idee? Laat een bericht achter, we proberen zo snel
+                    mogelijk te antwoorden.</p>
 
-            <section class="glass">
-                <h2>Stuur ons een bericht</h2>
                 <!-- Vervang de actie door je eigen formsubmit-adres -->
                 <form class="contact-form" action="https://formsubmit.co/JOUW-EMAILADRES" method="POST">
                     <input type="hidden" name="_captcha" value="true">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_subject" value="Nieuw bericht via Bim">
-                    <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off"
+                        aria-hidden="true">
 
                     <div class="form-row">
                         <div>
@@ -80,7 +76,7 @@
                     <label for="message">Bericht</label>
                     <textarea id="message" name="message" rows="6" required></textarea>
 
-                    <button class="send-btn" type="submit">Verstuur</button>
+                    <button class="send-btn" type="submit">Verstuur bericht</button>
                 </form>
             </section>
         </div>
@@ -89,6 +85,9 @@
     <footer class="site-footer">
         <div class="container footer-content">
             <p>© 2026 Bim</p>
+            <p>Over ons</p>
+            <p>Wij zijn twee It'ers die graag nieuwe dingen bouwen,</p>
+            <p>Zo denken wij graag met u mee voor uw nieuwe project.</p>
         </div>
     </footer>
 </body>
