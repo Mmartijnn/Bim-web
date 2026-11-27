@@ -216,7 +216,7 @@ h1 {
 .lower-section {
   position: relative;
   width: 100%;
-  background-image: url('../images/auto3.avif');
+  background-image: url('../images/opt/auto3-1600.webp');
   background-size: cover;
   background-position: center;
   padding: 4.5rem 1.5rem 6rem;
@@ -906,3 +906,55 @@ h1 {
   }
 }
 
+
+
+/* =========================================================
+   LAAD-ANIMATIE VOOR AFBEELDINGEN
+   Grijze glans zolang de foto laadt, daarna zacht infaden.
+   ========================================================= */
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+
+@keyframes img-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.js .card:not(.is-loaded),
+.js .p-card:not(.is-loaded),
+.js .banner-break:not(.is-loaded),
+.js .p-banner:not(.is-loaded) {
+  background-image: linear-gradient(100deg, #3a3c3f 30%, #54575b 50%, #3a3c3f 70%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+.js .card img,
+.js .p-card img,
+.js .banner-break img,
+.js .p-banner img {
+  opacity: 0;
+  animation: img-in 0.6s ease 4s both; /* vangnet: na 4s toch tonen als het script niet draait */
+}
+
+.js .card img.loaded,
+.js .p-card img.loaded,
+.js .banner-break img.loaded,
+.js .p-banner img.loaded {
+  opacity: 1;
+  animation: img-in 0.6s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .card:not(.is-loaded),
+  .js .p-card:not(.is-loaded),
+  .js .banner-break:not(.is-loaded),
+  .js .p-banner:not(.is-loaded) { animation: none; }
+
+  .js .card img.loaded,
+  .js .p-card img.loaded,
+  .js .banner-break img.loaded,
+  .js .p-banner img.loaded { animation: none; }
+}
